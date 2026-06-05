@@ -27,12 +27,14 @@ services:
     image: mysql:8.0
     container_name: mysql_server
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
       MYSQL_DATABASE: testdb
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
       - backend
+    secrets:
+      - db_root_password
 
   phpmyadmin:
     image: phpmyadmin:5.2-apache
@@ -41,12 +43,14 @@ services:
       - "6001:80"
     environment:
       PMA_HOST: mysql
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
     networks:
       - frontend
       - backend
     depends_on:
       - mysql
+    secrets:
+      - db_root_password
 
 networks:
   frontend:
@@ -54,3 +58,7 @@ networks:
 
 volumes:
   mysql_data:
+
+secrets:
+  db_root_password:
+    file: ./db_root_password.txt
