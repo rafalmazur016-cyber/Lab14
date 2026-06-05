@@ -32,4 +32,3 @@ Wchodzimy na http://localhost:6001/ i logujemy sie do używając danych zadeklar
 <img width="1366" height="423" alt="image" src="https://github.com/user-attachments/assets/5730d0a9-c77b-4c61-8cd1-71e63b96c8ac" />
 
 
-<img width="1363" height="342" alt="image" src="https://github.com/user-attachments/assets/aeb443b3-cef8-4a3e-88c7-6c1bcf2d83a1" />
