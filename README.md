@@ -12,5 +12,5 @@ Sprawdzamy dziąłanie strony na adresie http://localhost:4001/
 <img width="1253" height="682" alt="image" src="https://github.com/user-attachments/assets/6f4244f0-307f-43fa-b29f-79e04f217b26" />
 
 # Baza danych
-Wchodzimy na http://localhost:6001/ i logujemy sie do używając danych zadeklarownych user: root passsowrd: rootpassword gdzie tworze baze danych lab14
+Wchodzimy na http://localhost:6001/ i logujemy sie do używając danych zadeklarownych user: root passsowrd: rootpassword gdzie tworze baze danych lab14. Phpmyadmin jest przypisany do frontendu oraz do backundu. Sieć backend jest niezbędna do komunkacji z kontenerm mysql, pozwala na nazwy hosta . Sieć fronrend jest konieczna do interfejsu webowego dla użytkownika i umożliwia bezpieczną separację ruchu zewnętrznego od wewnętrznej sieci bazy danych
 <img width="1365" height="447" alt="image" src="https://github.com/user-attachments/assets/73beacfd-4d82-4958-8183-7a0feaad0064" />
